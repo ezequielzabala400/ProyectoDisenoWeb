@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/estilos.css" />
+    <link rel="stylesheet" href="../assets/mediaqueries.css" />
+    <link rel="icon" href="../assets/img/Logo.ico" />
+    <link rel="stylesheet" href="../assets/estilos-login-register.css">
+    <link rel="stylesheet" href="../assets/animaciones.css">
+    <title>Registro</title>
+  </head>
+  <body>
+    <header>
+      <a href="#Hero">
+        <img
+          src="../assets/img/My project-1 (4).png"
+          alt="Logo"
+          title="Logo"
+          class="Logo"
+        />
+      </a>
+      <div class="Buscador">
+        <input type="search" name="" id="Search" placeholder="Buscador" />
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+      </div>
+      <nav class="Navbar">
+        <label for="Toggle-Menu"
+          ><i class="fas fa-bars Toggle-Menu--size"></i
+        ></label>
+        <input type="checkbox" name="" id="Toggle-Menu" />
+        <ul class="Navbar__List">
+          <li class="Navbar__List__Item"><a href="#Hero">Inicio</a></li>
+          <li class="Navbar__List__Item">
+            <a href="#About-Us">Sobre Nosotros</a>
+          </li>
+          <li class="Navbar__List__Item"><a href="#Productos">Productos</a></li>
+          <li class="Navbar__List__Item"><a href="#Contacto">Contacto</a></li>
+        </ul>
+        <div class="Navbar__Carrito">
+          <label for="Toggle-Carrito"
+            ><i class="fas fa-cart-plus Toggle-Carrito--size"></i
+          ></label>
+          <input type="checkbox" name="" id="Toggle-Carrito" />
+          <div class="Carrito-Menu">
+            <p>Seleccione su producto</p>
+            <div class="Carrito-Menu__Comprar">
+              <div></div>
+              <button class="Btn Btn-Buy">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+        <i class="fas fa-user Navbar--User"></i>
+      </nav>
+    </header>
+    <main>
+        <article>
+            <section class="Formulario">
+                <div class="Formulario__Titles">
+                <h2>Registro</h2>
+                <a href="../index.html"><h4>←Volver</h4></a>
+            </div>
+            <h3>Ingrese sus datos</h3>
+                    <form action="">
+                        <label for="">Nombre de usuario:</label>
+                        <input type="text" class="Inputs">
+                        <label for="">Contraseña:</label>
+                        <input type="password" class="Inputs">
+                        <label for="">Correo:</label>
+                        <input type="email" name="" id="" class="Inputs">
+                        <input type="submit" value="Enviar" class="Inputs">
+                    </form>
+            </section>
+        </article>
+    </main>

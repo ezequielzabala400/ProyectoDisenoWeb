@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/estilos.css" />
+    <link rel="stylesheet" href="./assets/mediaqueries.css" />
+    <link rel="icon" href="./assets/img/Logo.ico" />
+    <link rel="stylesheet" href="./assets/animaciones.css">
+    <title>Hwa-Rang Steel</title>
+  </head>
+  <body>
+    <header>
+      <a href="#Hero">
+        <img
+          src="./assets/img/My project-1 (4).png"
+          alt="Logo"
+          title="Logo"
+          class="Logo"
+        />
+      </a>
+      <div class="Buscador">
+        <input type="search" name="" id="Search" placeholder="Buscador" />
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+      </div>
+      <nav class="Navbar">
+        <label for="Toggle-Menu"
+          ><i class="fas fa-bars Toggle-Menu--size"></i
+        ></label>
+        <input type="checkbox" name="" id="Toggle-Menu" />
+        <ul class="Navbar__List">
+          <li class="Navbar__List__Item"><a href="#Hero">Inicio</a></li>
+          <li class="Navbar__List__Item">
+            <a href="#About-Us">Sobre Nosotros</a>
+          </li>
+          <li class="Navbar__List__Item"><a href="#Productos">Productos</a></li>
+          <li class="Navbar__List__Item"><a href="#Contacto">Contacto</a></li>
+        </ul>
+        <div class="Navbar__Carrito">
+          <label for="Toggle-Carrito"
+            ><i class="fas fa-cart-plus Toggle-Carrito--size"></i
+          ></label>
+          <input type="checkbox" name="" id="Toggle-Carrito" />
+          <div class="Carrito-Menu">
+            <p>Seleccione su producto</p>
+            <div class="Carrito-Menu__Comprar">
+              <div></div>
+              <button class="Btn Btn-Buy">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+        <i class="fas fa-user Navbar--User"></i>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <section id="Hero">
+          <div class="Hero__Content">
+            <div class="Hero__Content__Titles">
+              <h1>Hwa-Rang Steel</h1>
+              <p>💪 Equipate con la mejor calidad 💪</p>
+            </div>
+            <div class="Hero__Buttons">
+              <p>
+                (Cree una cuenta para recibir noticias sobre nuevas ofertas en
+                su correo)
+              </p>
+              <div class="Hero__Buttons__Btn">
+                <button class="Btn Btn--Login">
+                  <a href="./pages/login.html">Iniciar Sesión</a>
+                </button>
+                <button class="Btn Btn--Register">
+                  <a href="./pages/register.html">Registrarse</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./assets/img/My project-1 (4).png"
+            alt="Logo"
+            title="Logo"
+            class="Hero--Image"
+          />
+        </section>
+        <section id="About-Us">
+          <img
+            src="./assets/img/wp2977585.webp"
+            alt="Imagen-Sobre-Nosotros"
+            title="Imagen-Sobre-Nosotros"
+            class="About-Us--Image"
+          />
+          <div class="About-Us__Content">
+            <h2>Sobre Nosotros</h2>
+            <p>
+              En Hwa-Rang Steel buscamos proveerte con la mejor calidad para tus
+              entrenamientos. Nos especializamos en indumentaria para taekwondo
+              ITF. Podes encontrar tus futuros cinturones, dobok, protectores y
+              mucho más...
+            </p>
+          </div>
+        </section>
+        <section id="Ofertas">
+          <h2>Ofertas de la semana</h2>
+          <div class="Ofertas__Content">
+            <img
+              src="./assets/img/productos/Cabezal Taekwondo adidas.webp"
+              alt="Cabezal Adidas"
+              title="Cabezal Adidas"
+              class="Ofertas__Content--Image"
+            />
+            <div class="Ofertas__Content__Info">
+              <p>Cabezal Adidas</p>
+              <p><span class="Precio-Tachado">$7000</span> $5000</p>
+              <button class="Btn Btn-Buy">Comprar</button>
+            </div>
+          </div>
+          <div class="Ofertas__Content">
+            <img
+              src="./assets/img/productos/Pads adidas Mano Guantes Protectores.webp"
+              alt="Guantes Adidas"
+              title="Guantes Adidas"
+              class="Ofertas__Content--Image"
+            />
+            <div class="Ofertas__Content__Info">
+              <p>Guantes Adidas</p>
+              <p><span class="Precio-Tachado">$3000</span> $1500</p>
+              <button class="Btn Btn-Buy">Comprar</button>
+            </div>
+          </div>
+          <div class="Ofertas__Content">
+            <img
+              src="./assets/img/productos/Protector Pie Taekwondo adidas.webp"
+              alt="Protectores Pie Adidas"
+              title="Protectores Pie Adidas"
+              class="Ofertas__Content--Image"
+            />
+            <div class="Ofertas__Content__Info">
+              <p>Protectores Pie Adidas</p>
+              <p><span class="Precio-Tachado">$3000</span> $1500</p>
+              <button class="Btn Btn-Buy">Comprar</button>
+            </div>
+          </div>
+        </section>
+        <section id="Categorias">
+          <div class="Categorias__Titles">
+            <h2>Categorías</h2>
+          </div>
+          <div class="Categorias__Content">
+            <div class="Categorias__Content__Item">
+              <img
+                src="./assets/img/categorias/martial-arts-uniform-facebook.png"
+                alt="Dobok"
+                title="Dobok"
+                class="Categorias--Image"
+              />
+              <div></div>
+              <p>Dobok</p>
+            </div>
+            <div class="Categorias__Content__Item">
+              <img
+                src="./assets/img/categorias/c33c08c147ee30b65ddcf7c3ab673635-cintura-n-plano-ka-rate.png"
+                alt="Cinturones"
+                title="Cinturones"
+                class="Categorias--Image"
+              />
+              <div></div>
+              <p>Cinturones</p>
+            </div>
+            <div class="Categorias__Content__Item">
+              <img
+                src="./assets/img/categorias/boxing-glove-facebook.png"
+                alt="Protectores"
+                title="Protectores"
+                class="Categorias--Image"
+              />
+              <div></div>
+              <p>Protectores</p>
+            </div>
+            <div class="Categorias__Content__Item">
+              <img
+                src="./assets/img/categorias/11__12885_std.png"
+                alt="Pads"
+                title="Pads"
+                class="Categorias--Image"
+              />
+              <div></div>
+              <p>Pads</p>
+            </div>
+            <div class="Categorias__Content__Item">
+              <img
+                src="./assets/img/categorias/b453456c551e2c1562db1d32a9cc1d07-icono-de-saco-de-boxeo.png"
+                alt="Bolsas"
+                title="Bolsas"
+                class="Categorias--Image"
+              />
+              <div></div>
+              <p>Bolsas</p>
+            </div>
+          </div>
+        </section>
+        <section id="Productos">
+          <div class="Productos__Titles">
+            <h2>Nuestros Productos</h2>
+          </div>
+          <div class="Productos__Content">
+            <div class="Productos__Item">
+              <img
+                src="./assets/img/productos/Dobok Taekwondo Logo Antiguo.webp"
+                alt="Dobok Taekwondo Logo Antiguo"
+                title="Dobok Taekwondo Logo Antiguo"
+                class="Productos__Item--Image"
+              />
+              <div class="Productos__Item__Info">
+                <p>Dobok Taekwondo Logo Antiguo</p>
+                <div>
+                  <p>$ 5800</p>
+                  <button class="Btn Btn-Buy">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="Productos__Item">
+              <img
+                src="./assets/img/productos/Dobok Taekwondo Nuevo Logo.webp"
+                alt="Dobok Taekwondo Logo Nuevo"
+                title="Dobok Taekwondo Logo Nuevo"
+                class="Productos__Item--Image"
+              />
+              <div class="Productos__Item__Info">
+                <p>Dobok Taekwondo Logo Nuevo</p>
+                <div>
+                  <p>$ 5800</p>
+                  <button class="Btn Btn-Buy">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="Productos__Item">
+              <img
+                src="./assets/img/productos/D_NQ_NP_986330-MLA31115283521_062019-O.webp"
+                alt="Dobok Sabon Taekwondo Logo Antiguo"
+                title="Dobok Sabon Taekwondo Logo Antiguo"
+                class="Productos__Item--Image"
+              />
+              <div class="Productos__Item__Info">
+                <p>Dobok Sabon Taekwondo Logo Antiguo</p>
+                <div>
+                  <p>$ 21.200</p>
+                  <button class="Btn Btn-Buy">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="Productos__Item">
+              <img
+                src="./assets/img/productos/D_NQ_NP_619379-MLA51556643574_092022-O.webp"
+                alt="Dobok Sabon Taekwondo Logo Nuevo"
+                title="Dobok Sabon Taekwondo Logo Nuevo"
+                class="Productos__Item--Image"
+              />
+              <div class="Productos__Item__Info">
+                <p>Dobok Sabon Taekwondo Logo Nuevo</p>
+                <div>
+                  <p>$ 21.200</p>
+                  <button class="Btn Btn-Buy">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="Productos__Item">
+              <img
+                src="./assets/img/productos/D_NQ_NP_851797-MLA48755923463_012022-O.webp"
+                alt="Dobok Sabon-nim Taekwondo Logo Antiguo"
+                title="Dobok Sabon-nim Taekwondo Logo Antiguo"
+                class="Productos__Item--Image"
+              />
+              <div class="Productos__Item__Info">
+                <p>Dobok Sabon-nim Taekwondo Logo Antiguo</p>
+                <div>
+                  <p>$ 27.500</p>
+                  <button class="Btn Btn-Buy">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="Productos__Item">
+              <img
+                src="./assets/img/productos/D_NQ_NP_948711-MLA51557157576_092022-O.webp"
+                alt="Dobok Sabon-nim Taekwondo Logo Nuevo"
+                title="Dobok Sabon-nim Taekwondo Logo Nuevo"
+                class="Productos__Item--Image"
+              />
+              <div class="Productos__Item__Info">
+                <p>Dobok Sabon-nim Taekwondo Logo Nuevo</p>
+                <div>
+                  <p>$ 27.500</p>
+                  <button class="Btn Btn-Buy">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="Productos__Item">
+              <img
+                src="./assets/img/productos/Cinturones De Taekwon-do Itf.webp"
+                alt="Cinturones Taekwondo"
+                title="Cinturones Taekwondo"
+                class="Productos__Item--Image"
+              />
+              <div class="Productos__Item__Info">
+                <p>Cinturones Taekwondo</p>
+                <select name="" id="Cinturones" class="Selector">
+                  <option value="Blanco">Blanco</option>
+                  <option value="Amarrillo">Amarrillo</option>
+                  <option value="Verde">Verde</option>
+                  <option value="Azul">Azul</option>
+                  <option value="Rojo">Rojo</option>
+                  <option value="Negro">Negro</option>
+                </select>
+                <div>
+                  <p>$ 1.300</p>
+                  <button class="Btn Btn-Buy">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="Productos__Item">
+              <img
+                src="./assets/img/productos/Par De Puntas Cinturón De Taekwon-do Itf.webp"
+                alt="Par de Puntas cinturón taekwondo"
+                title="Par de Puntas cinturón taekwondo"
+                class="Productos__Item--Image"
+              />
+              <div class="Productos__Item__Info">
+                <p>Par de Puntas cinturón</p>
+                <select name="" id="Puntas" class="Selector">
+                  <option value="Amarrillo">Amarrillo</option>
+                  <option value="Verde">Verde</option>
+                  <option value="Azul">Azul</option>
+                  <option value="Rojo">Rojo</option>
+                  <option value="Negro">Negro</option>
+                </select>
+                <div>
+                  <p>$ 600</p>
+                  <button class="Btn Btn-Buy">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="Productos__Item">
+              <img
+                src="./assets/img/productos/Protectores De Pie Gladiador Taekwondo.webp"
+                alt="Protectores De Pie Gladiador"
+                title="Protectores De Pie Gladiador"
+                class="Productos__Item--Image"
+              />
+              <div class="Productos__Item__Info">
+                <p>Protectores De Pie Gladiador</p>
+                <div>
+                  <p>$ 12.500</p>
+                  <button class="Btn Btn-Buy">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="Productos__Item">
+              <img
+                src="./assets/img/productos/Protectores De Mano Guante Gladiador.webp"
+                alt="Protectores De Mano Guante Gladiador"
+                title="Protectores De Mano Guante Gladiador"
+                class="Productos__Item--Image"
+              />
+              <div class="Productos__Item__Info">
+                <p>Protectores De Mano Guante Gladiador</p>
+                <div>
+                  <p>$ 12.500</p>
+                  <button class="Btn Btn-Buy">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="Productos__Item">
+              <img
+                src="./assets/img/productos/Guante de Foco.webp"
+                alt="Escudo Guante de Foco Proyect"
+                title="Escudo Guante de Foco Proyect"
+                class="Productos__Item--Image"
+              />
+              <div class="Productos__Item__Info">
+                <p>Escudo Guante de Foco Proyect</p>
+                <div>
+                  <p>$ 21.300</p>
+                  <button class="Btn Btn-Buy">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="Productos__Item">
+              <img
+                src="./assets/img/productos/Palmeta.webp"
+                alt="Guanto de Foco Proyect Palmeta"
+                title="Guanto de Foco Proyect Palmeta"
+                class="Productos__Item--Image"
+              />
+              <div class="Productos__Item__Info">
+                <p>Guanto de Foco Proyect Palmeta</p>
+                <div>
+                  <p>$ 6.900</p>
+                  <button class="Btn Btn-Buy">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="Contacto">
+          <h2>Contacto</h2>
+          <div class="Contacto__Items">
+            <i class="fa-brands fa-instagram"> @Hwa-RangSteel</i>
+            <i class="fa-brands fa-facebook"> Hwa-RangGroup</i>
+            <i class="fa-solid fa-phone"> 888 8888 8888</i>
+            <i class="fa-sharp fa-solid fa-location-dot">
+              Del Corro 709; Bs As; Argentina</i
+            >
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p>🥋👊 Chumbi; Chariot; Kione 👊🥋</p>
+      <img
+        src="./assets/img/My project-1 (4).png"
+        alt="Logo"
+        title="Logo"
+        class="Logo"
+      />
+    </footer>
+  </body>
+</html>

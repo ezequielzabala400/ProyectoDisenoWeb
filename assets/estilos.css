@@ -1,0 +1,481 @@
+:root{
+    --Black:rgb(0, 0, 0);
+    --White:rgb(255, 255, 255);
+    --Red:rgb(255, 0, 0);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #ffffff #000000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 3px solid #616161;
+  }
+
+body{
+    background: rgb(170, 170, 170);
+}
+
+header{
+    background: rgb(170, 170, 170);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.Logo{
+    height: 80px;
+    width: 80px;
+}
+
+.Buscador{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Buscador input{
+    height: 30px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    background: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.Buscador input::placeholder{
+    color: white;
+}
+
+.Buscador i{
+    padding: 6px 0 0 0;
+}
+
+.Navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.Navbar input{
+    display: none;
+}
+
+.Toggle-Menu--size{
+    font-size: 2em;
+}
+
+.fa-bars{
+    display: none;
+}
+
+.Toggle-Carrito--size{
+    font-size: 2em;
+}
+
+.Carrito-Menu{
+    height: 75vh;
+    width: 360px;
+    padding: 50px;
+    background: var(--Black);
+    position: absolute;
+    top: 100px;
+    right: 0;
+    color: var(--White);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid var(--White);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: translateX(200%);
+}
+
+#Toggle-Carrito:checked + .Carrito-Menu{
+    transform: translateX(0);
+    transition: all 0.4s ease-in;
+}
+
+.Carrito-Menu__Comprar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.Carrito-Menu__Comprar div{
+    height: 2px;
+    width: 260%;
+    background: var(--White);
+}
+
+.Navbar__List{
+    display: flex;
+    gap: 20px;
+}
+
+.Navbar__List__Item a{
+    color: black;
+    font-weight: bold;
+}
+
+.Navbar__List__Item{
+    position: relative;
+}
+
+.Navbar__List__Item a::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--Black);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: all 0.4s ease;
+}
+
+.Navbar__List__Item a:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom right;
+    transition: all 0.4s ease;
+}
+
+.Navbar--User{
+    font-size: 1.4em;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+main{
+    margin-top: 100px;
+    background: url(./img/45-451509_pics-photos-taekwondo-wallpaper-taekwondo-taekwondo-black-belt.jpg) no-repeat;
+}
+
+#Hero{
+    margin: auto;
+    max-width: 1400px;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 300px;
+}
+
+.Hero--Image{
+    height: 300px;
+}
+
+.Hero__Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+}
+
+.Hero__Content__Titles{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Hero__Content__Titles h1{
+    font-size: 3em;
+}
+
+.Hero__Buttons p{
+    font-size: 0.9em;
+    color: rgb(117, 117, 117);
+}
+
+.Hero__Buttons__Btn{
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.Btn{
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+    background: var(--Black);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.Btn a{
+    color: var(--White);
+}
+
+#About-Us{
+    margin-top: 300px;
+    padding: 90px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background: var(--Black);
+    
+}
+
+.About-Us--Image{
+    height: 300px;
+    width: 600px;
+    border: 4px solid white;
+    border-radius: 60px;
+}
+
+.About-Us__Content{
+    color: var(--White);
+    max-width: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+#Ofertas{
+    padding: 160px 40px;
+    background: var(--Black);
+    color: var(--White);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#Ofertas h2{
+    text-decoration: underline;
+}
+
+.Ofertas__Content{
+    height: 200px;
+    width: 360px;
+    padding: 20px;
+    border: 4px solid gray;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+
+.Ofertas__Content--Image{
+    height: 160px;
+    width: 160px;
+    border-radius: 20px;
+}
+
+.Ofertas__Content__Info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.Precio-Tachado{
+    text-decoration: line-through;
+    color: var(--Red);
+}
+
+.Btn-Buy{
+    border: 2px solid white;
+}
+
+#Categorias{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--Black);
+    color: var(--White);
+    gap: 20px;
+}
+
+.Categorias__Titles{
+    color: var(--White);
+}
+
+.Categorias__Content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.Categorias--Image{
+    height: 100px;
+    width: 100px;
+}
+
+.Categorias__Content__Item{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background:#000000;
+    border: 4px solid var(--White);
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.Categorias__Content__Item:hover{
+    transform: scale(1.04);
+    transition: all 0.2s ease-out;
+}
+
+.Categorias__Content__Item div{
+    height: 2px;
+    width: 80%;
+    background: var(--White);
+}
+
+.Categorias__Content__Item p{
+    font-weight: bold;
+    color: var(--White);
+}
+
+#Productos{
+    background: var(--Black);
+    color: var(--White);
+    padding: 30px;
+}
+
+.Productos__Titles{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Productos__Content{
+    margin: auto;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.Productos__Item{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    gap: 10px;
+    
+}
+
+.Productos__Item--Image{
+    height: 240px;
+    width: 240px;
+}
+
+.Productos__Item__Info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+    gap: 14px;
+}
+
+.Productos__Item__Info div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.Selector{
+    padding: 2px;
+    background: var(--Black);
+    color: var(--White);
+}
+
+#Contacto{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: var(--Black);
+}
+
+#Contacto h2{
+    color: var(--White);
+    text-decoration:underline;
+}
+
+.Contacto__Items{
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+footer{
+    padding: 20px;
+    color: var(--White);
+    background: var(--Black);
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
