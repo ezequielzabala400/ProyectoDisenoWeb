@@ -2,6 +2,7 @@
     --Black:rgb(0, 0, 0);
     --White:rgb(255, 255, 255);
     --Red:rgb(255, 0, 0);
+    --Gray: rgb(170, 170, 170);
 }
 
 *{
@@ -36,11 +37,11 @@
   }
 
 body{
-    background: rgb(170, 170, 170);
+    background: var(--Gray);
 }
 
 header{
-    background: rgb(170, 170, 170);
+    background: var(--Gray);
     height: 100px;
     width: 100%;
     display: flex;
@@ -69,13 +70,13 @@ header{
     padding: 10px;
     border-radius: 10px;
     outline: none;
-    background: black;
-    color: white;
-    border: 2px solid white;
+    background: var(--Black);
+    color: var(--White);
+    border: 2px solid var(--White);
 }
 
 .Buscador input::placeholder{
-    color: white;
+    color: var(--White);
 }
 
 .Buscador i{
@@ -149,7 +150,7 @@ header{
 }
 
 .Navbar__List__Item a{
-    color: black;
+    color: var(--Black);
     font-weight: bold;
 }
 
@@ -179,7 +180,7 @@ header{
 .Navbar--User{
     font-size: 1.4em;
     padding: 10px;
-    border: 2px solid black;
+    border: 2px solid var(--Black);
     border-radius: 30px;
 }
 
@@ -260,7 +261,7 @@ main{
 .About-Us--Image{
     height: 300px;
     width: 600px;
-    border: 4px solid white;
+    border: 4px solid var(--White);
     border-radius: 60px;
 }
 
@@ -293,7 +294,7 @@ main{
     height: 200px;
     width: 360px;
     padding: 20px;
-    border: 4px solid gray;
+    border: 4px solid var(--Gray);
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
     display: flex;
@@ -322,7 +323,7 @@ main{
 }
 
 .Btn-Buy{
-    border: 2px solid white;
+    border: 2px solid var(--White);
 }
 
 #Categorias{
@@ -411,7 +412,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
+    border: 2px solid var(--White);
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     gap: 10px;
@@ -460,7 +461,7 @@ main{
 }
 
 .Contacto__Items{
-    color: rgb(255, 255, 255);
+    color: var(--White);
     font-size: 1.4em;
     max-width: 700px;
     display: flex;
