@@ -1,0 +1,213 @@
+@media (max-width: 1200px) {
+    
+    main{
+        background: url(./img/45-451509_pics-photos-taekwondo-wallpaper-taekwondo-taekwondo-black-belt.jpg) no-repeat;
+        background-size: 130vh;
+    }
+    
+    #Hero{
+        padding: 180px 60px;
+        height: 260px;
+        margin-top: 100px;
+        gap: 200px;
+    }
+
+    #Ofertas{
+        flex-direction: column;
+    }
+
+    @media (max-width: 1024px) {
+        
+        .Toggle-Carrito--size{
+            font-size: 1.4em;
+        }
+        
+        .Buscador input{
+            width: 200px;
+        }
+
+        .Navbar__List__Item{
+            font-size: 0.8em;
+        }
+
+        .Navbar--User{
+            font-size: 1em;
+        }
+
+        #Hero{
+            height: 330px;
+        }
+        .Hero--Image{
+            height: 240px;
+        }
+        .Hero__Buttons p{
+            max-width: 300px;
+        }
+
+        #About-Us{
+            flex-direction: column;
+        }
+        
+        .About-Us__Content p{
+            max-width: 500px;
+        }
+
+        #Ofertas{
+            padding: 100px 40px;
+        }
+
+        .Contacto__Items{
+            max-width: 500px;
+            font-size: 1em;
+        }
+
+        footer{
+            font-size: 1em;
+        }
+    }
+
+    @media (max-width: 768px) {
+        
+        .fa-bars{
+            display: block;
+            font-size: 1.4em;
+        }
+
+        .Navbar__List{
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+            top: 100px;
+            right: 0;
+            background: var(--Black);
+            padding: 10px;
+            transform: translateX(200%);
+            
+        }
+
+        #Toggle-Menu:checked + .Navbar__List{
+            transform: translateX(0);
+            transition: all 0.4s ease-in;
+        }
+
+        .Navbar__List__Item a{
+            color: white;
+        }
+
+        main{
+            background: none;
+        }
+
+        #Hero{
+            padding: 100px 40px;
+            flex-direction: column;
+            gap: 60px;
+        }
+
+        .Hero--Image{
+            height: 150px;
+        }
+
+        .About-Us--Image{
+            height: 260px;
+            width: 440px;
+        }
+
+        .Categorias__Content{
+            max-width: 500px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .Logo{
+            height: 60px;
+            width: 60px;
+        }
+
+        .Buscador input{
+            width: 100px;
+        }
+
+        .Navbar{
+            gap: 20px;
+        }
+
+        .Navbar__List{
+            padding: unset;
+            justify-content: center;
+            gap: 110px;
+        }
+
+        .Hero__Content__Titles h1{
+            font-size: 2em;
+        }
+
+        .About-Us--Image{
+            height: 150px;
+            width: 300px;
+        }
+
+        .About-Us__Content p{
+            font-size: 0.7em;
+            line-height: 17px;
+            max-width: 300px;
+        }
+
+        .Ofertas__Content{
+            height: 100px;
+            width: 200px;
+        }
+
+        .Ofertas__Content--Image{
+            height: 70px;
+            width: 70px;
+        }
+
+        .Ofertas__Content__Info{
+            font-size: 12px;
+        }
+
+        .Btn-Buy{
+            height: 20px;
+            width: 60px;
+            font-size: 10px;
+        }
+
+        .Categorias--Image{
+            height: 70px;
+            width: 70px;
+        }
+
+        .Categorias__Content__Item{
+            font-size: 11px;
+        }
+
+        .Productos__Titles{
+            font-size: 14px;
+        }
+
+        .Productos__Item{
+            padding: 20px;
+        }
+
+        .Productos__Item--Image{
+            height: 140px;
+            width: 140px;
+        }
+
+        .Productos__Item__Info{
+            font-size: 12px;
+            max-width: 140px;
+        }
+
+        #Contacto h2{
+            font-size: 20px;
+        }
+
+        .Contacto__Items{
+            font-size: 0.7em;
+        }
+    }
